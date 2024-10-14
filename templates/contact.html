@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}Contact - 𝐌𝐎𝐎𝐍{% endblock %}
+
+{% block content %}
+<div class="contact-section">
+    <h1 class="contact-title">Contact Me</h1>
+    <div class="contact-grid">
+        <div class="contact-box animate-box">
+            <h2>Instagram Profile</h2>
+            <p><strong>Name:</strong> 𝐀𝐌𝐎𝐍 ٭︎ چاند</p>
+            <p><strong>Username:</strong> @amon.chand.official</p>
+            <p><strong>User ID:</strong> Don't Know</p>
+        </div>
+        <div class="contact-box animate-box">
+            <h2>Telegram Profile</h2>
+            <p><strong>Name:</strong> ⏤͟͟͞͞𝙈𝙊𝙊𝙉 ٭ ᶠᵘᵉᵍᵒ ᯤ̸</p>
+            <p><strong>Username:</strong> @Moon78692</p>
+            <p><strong>User ID:</strong> Don't Know</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>Coded by <span>𐌑ᴏᴏɴ</span> using <span>Flask & Python</span></p>
+    <p>© 2024 𐌑ᴏᴏɴ 𐌏ᴘ</p>
+</footer>
+
+<script>
+    // Add animation delay to each contact box
+    document.querySelectorAll('.contact-box').forEach((box, index) => {
+        box.style.transitionDelay = `${index * 0.3}s`;
+    });
+</script>
+{% endblock %}
